@@ -6,10 +6,10 @@ echo "✅ Tests passed."
 
 # Biome.
 echo "🧼 Formatting with Biome..."
-pnpm biome check --write --changed
+pnpm biome check --write --changed --no-errors-on-unmatched
 
 echo "🔍 Running Biome linter..."
-pnpm biome check --changed
+pnpm biome check --changed --no-errors-on-unmatched
 
 if [ $? -ne 0 ]; then
   echo "❌ Biome found issues that can't be fixed automatically. Push aborted."
