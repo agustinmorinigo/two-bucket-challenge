@@ -6,9 +6,7 @@ import './App.css';
 function App() {
     const [count, setCount] = useState(0);
 
-    const emptyFuction = (jee) => {
-        console.log(jee);
-    };
+    const emptyFuction = () => {};
 
     return (
         <>
