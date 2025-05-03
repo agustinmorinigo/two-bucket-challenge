@@ -29,7 +29,19 @@
     "rules": {
       "recommended": true,
       "style": {
-        "noNonNullAssertion": "off"
+        "noNonNullAssertion": "off",
+        "useImportType": "error"
+      },
+      "suspicious": {
+        "noEmptyBlockStatements": "error",
+        "noEmptyBlock": "error",
+        "noExplicitAny": "error",
+        "noConsoleLog": "error"
+      },
+      "correctness": {
+        "noUnusedFunctionParameters": "error",
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
       }
     }
   },
