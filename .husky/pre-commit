@@ -1,0 +1,18 @@
+#  Test.
+echo "🔍 Running tests before saving the commit..."
+pnpm test
+echo "✅ Tests passed."
+
+# Biome.
+echo "🧼 Formatting with Biome..."
+pnpm biome check --write --changed || true
+
+echo "🔍 Running Biome linter..."
+pnpm biome check --changed || true
+
+if [ $? -ne 0 ]; then
+  echo "❌ Biome found issues that can't be fixed automatically. Commit aborted."
+  exit 1
+fi
+
+echo "✅ Biome checks passed. Proceeding with commit."

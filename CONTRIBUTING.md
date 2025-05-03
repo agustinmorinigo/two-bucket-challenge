@@ -40,7 +40,7 @@ Thank you for considering contributing to this project! To make the collaboratio
 - `feature/add-login-page`
 - `bugfix/fix-header-alignment`
 - `refactor/remove-unused-hooks`
-- `chore/update-eslint-config`
+- `chore/update-biome-config`
 
 
 ## Commit Message Rules

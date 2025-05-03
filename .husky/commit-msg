@@ -1,0 +1,13 @@
+echo "🔍 Checking commit message format..."
+
+# Ejecutamos commitlint directamente
+pnpm exec commitlint --edit "$1"
+STATUS=$?
+
+if [ $STATUS -eq 0 ]; then
+  # Solo mostramos el mensaje de éxito si el código de salida es 0 (éxito)
+  echo "✅ Commit message format is valid!"
+fi
+
+# Mantenemos el mismo código de salida que commitlint
+exit $STATUS
