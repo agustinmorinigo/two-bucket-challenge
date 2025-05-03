@@ -1,13 +1,20 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo "Running tests before the push..."
+echo "🔍 Running tests before the push..."
 pnpm test
+
+echo "✅ Tests passed."
+echo "🔍 Checking branch name..."
 
 branch_name=$(git symbolic-ref --short HEAD)
 
 if ! echo "$branch_name" | grep -Eq '^(feature|fix|hotfix|refactor|docs|test|chore)\/[a-z0-9._-]+$'; then
   echo "❌ Invalid branch name: '$branch_name'"
   echo "The branch name must begin with: feature/ | fix/ | hotfix/ | refactor/ | docs/ | test/ | chore/"
+  echo "Example: feature/my-feature, fix/my-bug-fix, hotfix/my-hotfix, refactor/my-refactor, docs/my-docs, test/my-test, chore/my-chore"
+  echo "Please rename your branch to follow the naming convention."
   exit 1
 fi
+
+echo "✅ Branch name '$branch_name' is valid."
