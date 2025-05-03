@@ -1,54 +1,54 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "vcs": {
-    "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": false,
-    "defaultBranch": "main"
-  },
-  "files": {
-    "ignoreUnknown": false,
-    "ignore": [
-      "**/*.config.js",
-      "**/*.config.ts",
-      "**/*.json",
-      "**/*.yml",
-      "**/*.yaml"
-    ]
-  },
-  "formatter": {
-    "enabled": true,
-    "indentStyle": "space",
-    "indentWidth": 4
-  },
-  "organizeImports": {
-    "enabled": true
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true,
-      "style": {
-        "noNonNullAssertion": "off",
-        "useImportType": "error"
-      },
-      "suspicious": {
-        "noEmptyBlockStatements": "error",
-        "noEmptyBlock": "error",
-        "noExplicitAny": "error",
-        "noConsoleLog": "error"
-      },
-      "correctness": {
-        "noUnusedFunctionParameters": "error",
-        "noUnusedImports": "error",
-        "noUnusedVariables": "error"
-      }
-    }
-  },
-  "javascript": {
+    "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+    "vcs": {
+        "enabled": true,
+        "clientKind": "git",
+        "useIgnoreFile": true,
+        "defaultBranch": "main"
+    },
+    "files": {
+        "ignoreUnknown": false,
+        "ignore": [
+            "**/*.config.js",
+            "**/*.config.ts",
+            "**/*.json",
+            "**/*.yml",
+            "**/*.yaml"
+        ]
+    },
     "formatter": {
-      "semicolons": "always",
-      "quoteStyle": "single"
+        "enabled": true,
+        "indentStyle": "space",
+        "indentWidth": 4
+    },
+    "organizeImports": {
+        "enabled": true
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "style": {
+                "noNonNullAssertion": "off",
+                "useImportType": "error"
+            },
+            "suspicious": {
+                "noEmptyBlockStatements": "error",
+                "noEmptyBlock": "error",
+                "noExplicitAny": "error",
+                "noConsoleLog": "error"
+            },
+            "correctness": {
+                "noUnusedFunctionParameters": "error",
+                "noUnusedImports": "error",
+                "noUnusedVariables": "error"
+            }
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "semicolons": "always",
+            "quoteStyle": "single"
+        }
     }
-  }
 }
