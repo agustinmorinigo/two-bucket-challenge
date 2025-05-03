@@ -1,10 +1,27 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+#  Test.
 echo "🔍 Running tests before the push..."
 pnpm test
 
 echo "✅ Tests passed."
+
+# Biome.
+echo "🧼 Formatting with Biome..."
+pnpm biome check --write --changed || true
+
+echo "🔍 Running Biome linter..."
+pnpm biome check --changed || true
+
+if [ $? -ne 0 ]; then
+  echo "❌ Biome found issues that can't be fixed automatically. Push aborted."
+  exit 1
+fi
+
+echo "✅ Biome checks passed."
+
+# Branch name check.
 echo "🔍 Checking branch name..."
 
 branch_name=$(git symbolic-ref --short HEAD)
