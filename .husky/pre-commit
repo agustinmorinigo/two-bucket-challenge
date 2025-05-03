@@ -1,0 +1,2 @@
+echo "Running tests before saving the commit..."
+pnpm test
