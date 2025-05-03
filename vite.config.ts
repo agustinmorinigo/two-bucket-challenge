@@ -4,9 +4,9 @@ import path from 'path';
 import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
     plugins: [react(), tailwindcss()],
-    base: '/two-bucket-challenge/',
+    base: command === 'build' ? '/two-bucket-challenge/' : '/',
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './src'),
@@ -17,4 +17,4 @@ export default defineConfig({
         environment: 'jsdom',
         setupFiles: './src/setupTests.ts',
     },
-});
+}));
