@@ -3,20 +3,25 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import tailwindcss from '@tailwindcss/vite';
 
-// https://vite.dev/config/
+const prNumber = process.env.PR_NUMBER;
+
 export default defineConfig(({ command }) => ({
-    plugins: [react(), tailwindcss()],
-    base: command === 'build' ? '/two-bucket-challenge/' : '/',
-    resolve: {
-        alias: {
-            '@/': path.resolve(__dirname, './src/'),
-            '@/components': path.resolve(__dirname, './src/components'),
-            '@/lib': path.resolve(__dirname, './src/lib'),
-        },
+  plugins: [react(), tailwindcss()],
+  base: command === 'build'
+    ? prNumber
+      ? `/preview/pr-${prNumber}/`
+      : '/two-bucket-challenge/'
+    : '/',
+  resolve: {
+    alias: {
+      '@/': path.resolve(__dirname, './src/'),
+      '@/components': path.resolve(__dirname, './src/components'),
+      '@/lib': path.resolve(__dirname, './src/lib'),
     },
-    test: {
-        globals: true,
-        environment: 'jsdom',
-        setupFiles: './src/setupTests.ts',
-    },
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/setupTests.ts',
+  },
 }));
