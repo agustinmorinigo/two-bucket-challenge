@@ -9,7 +9,9 @@ export default defineConfig(({ command }) => ({
     base: command === 'build' ? '/two-bucket-challenge/' : '/',
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './src'),
+            '@/': path.resolve(__dirname, './src/'),
+            '@/components': path.resolve(__dirname, './src/components'),
+            '@/lib': path.resolve(__dirname, './src/lib'),
         },
     },
     test: {
