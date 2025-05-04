@@ -9,7 +9,12 @@
         "paths": {
             "@/*": ["./src/*"],
             "@/components/*": ["src/components/*"],
-            "@/lib/*": ["src/lib/*"]
+            "@/constants/*": ["src/constants/*"],
+            "@/context/*": ["src/context/*"],
+            "@/entities/*": ["src/entities/*"],
+            "@/hooks/*": ["src/hooks/*"],
+            "@/lib/*": ["src/lib/*"],
+            "@/utils/*": ["src/utils/*"]
         }
     }
 }

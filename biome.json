@@ -19,7 +19,9 @@
     "formatter": {
         "enabled": true,
         "indentStyle": "space",
-        "indentWidth": 4
+        "indentWidth": 4,
+        "lineWidth": 120,
+        "bracketSpacing": true
     },
     "organizeImports": {
         "enabled": true
