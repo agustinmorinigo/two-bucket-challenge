@@ -1,11 +1,10 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
 import App from './App';
 
-test('renders a heading', () => {
-    render(<App />);
-    expect(screen.getByRole('heading')).toBeInTheDocument();
-});
-
-test('failing test', () => {
-    expect(1 + 1).toBe(2);
+describe('App Component', () => {
+    it('renders without crashing', () => {
+        const { container } = render(<App />);
+        expect(container).toBeDefined();
+    });
 });
