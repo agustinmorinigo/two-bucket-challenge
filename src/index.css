@@ -120,6 +120,6 @@
     body,
     html,
     #root {
-        @apply h-full w-full overflow-x-hidden overflow-x-auto;
+        @apply h-full w-full overflow-x-hidden overflow-y-auto;
     }
 }
