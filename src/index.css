@@ -117,4 +117,9 @@
     body {
         @apply bg-background text-foreground;
     }
+    body,
+    html,
+    #root {
+        @apply h-full w-full overflow-x-hidden overflow-x-auto;
+    }
 }
