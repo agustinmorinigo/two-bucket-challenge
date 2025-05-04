@@ -26,3 +26,13 @@ jobs:
 
       - name: Run tests
         run: pnpm test
+        
+      - name: Save PR number
+        run: echo ${{ github.event.pull_request.number }} > pr-number.txt
+        
+      - name: Upload PR info
+        uses: actions/upload-artifact@v3
+        with:
+          name: pr-info
+          path: pr-number.txt
+          retention-days: 1
