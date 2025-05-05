@@ -1,6 +1,6 @@
 import { PaintBucket } from 'lucide-react';
 import useLanguage from '@/hooks/use-language';
-import { LanguageSelector } from '../language-selector';
+import { LanguageSelector } from '../../language-selector';
 
 export default function Header() {
     const { t } = useLanguage();
