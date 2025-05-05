@@ -4,11 +4,11 @@ Thank you for considering contributing to this project! To make the collaboratio
 
 ## How to Contribute
 
-1. **Fork the Repository**: Fork this repository to your GitHub account.
+1. **Clone the Repository**: Clone this repository to your GitHub account.
 2. **Create a new branch from `main`**.
 3. **Make changes**: Make your changes in a clear and concise manner. Ensure your code is clean and well-documented.
 4. **Commit changes**.
-5. **Push changes**: Push your changes to your fork.
+5. **Push changes**: Push your changes to your clone.
 6. **Create a Pull Request (PR)**: 
    - Create a PR describing the changes you made.
    - Ensure the PR targets the `main` branch of the repository.
