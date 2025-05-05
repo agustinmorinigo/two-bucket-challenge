@@ -21,22 +21,22 @@ The goal of the project is to provide an interactive experience to solve the cla
 
 ## Technologies
 
-- **React**
-- **TypeScript**
-- **Vite**
-- **TailwindCSS**
-- **i18next**
-- **Husky**
-- **Biome**
-- **Vitest**
-- **pnpm**
+- [**React**](https://react.dev)
+- [**TypeScript**](https://www.typescriptlang.org/docs)
+- [**Vite**](https://vitejs.dev/guide/)
+- [**TailwindCSS**](https://tailwindcss.com/docs)
+- [**i18next**](https://www.i18next.com/)
+- [**Husky**](https://typicode.github.io/husky/#/)
+- [**Biome**](https://biomejs.dev/)
+- [**Vitest**](https://vitest.dev/)
+- [**pnpm**](https://pnpm.io/)
 
 ## Prerequisites
 
 Before getting started, make sure you have the following installed:
 
-- **Node.js** (version 18 or higher)
-- **pnpm** (package manager, you can install it with `npm install -g pnpm`)
+- [**Node.js**](https://nodejs.org/en/download) (version 18 or higher)
+- [**pnpm**](https://pnpm.io/) (package manager, you can install it with `npm install -g pnpm`)
 
 ## Installation
 
