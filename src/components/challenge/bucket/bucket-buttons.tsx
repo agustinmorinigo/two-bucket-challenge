@@ -1,9 +1,9 @@
-import { Droplets } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import isBucketFilled from '@/utils/is-bucket-filled';
-import isBucketEmpty from '@/utils/is-bucket-empty';
 import useChallengeContext from '@/context/challenge/context';
 import type { Bucket } from '@/entities/bucket';
+import isBucketEmpty from '@/utils/is-bucket-empty';
+import isBucketFilled from '@/utils/is-bucket-filled';
+import { Droplets } from 'lucide-react';
 
 interface BucketButtonsProps {
     bucket: Bucket;

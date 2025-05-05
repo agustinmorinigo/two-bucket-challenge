@@ -1,6 +1,6 @@
-import { Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import useInstructionsDialogContext from '@/context/instructions-dialog/context';
+import { Info } from 'lucide-react';
 import ResetButton from '../reset-button';
 
 export default function ChallengeHeader() {

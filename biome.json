@@ -8,13 +8,7 @@
     },
     "files": {
         "ignoreUnknown": false,
-        "ignore": [
-            "**/*.config.js",
-            "**/*.config.ts",
-            "**/*.json",
-            "**/*.yml",
-            "**/*.yaml"
-        ]
+        "ignore": ["**/*.config.js", "**/*.config.ts", "**/*.json", "**/*.yml", "**/*.yaml"]
     },
     "formatter": {
         "enabled": true,

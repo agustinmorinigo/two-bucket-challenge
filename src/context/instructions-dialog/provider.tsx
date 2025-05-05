@@ -1,8 +1,5 @@
 import { useState } from 'react';
-import {
-    InstructionsDialogContext,
-    type InstructionsDialogContextType,
-} from './context';
+import { InstructionsDialogContext, type InstructionsDialogContextType } from './context';
 
 const InstructionsDialogProvider = ({
     children,
@@ -22,11 +19,7 @@ const InstructionsDialogProvider = ({
         toggle,
     };
 
-    return (
-        <InstructionsDialogContext.Provider value={value}>
-            {children}
-        </InstructionsDialogContext.Provider>
-    );
+    return <InstructionsDialogContext.Provider value={value}>{children}</InstructionsDialogContext.Provider>;
 };
 
 export default InstructionsDialogProvider;

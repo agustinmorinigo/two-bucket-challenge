@@ -1,8 +1,8 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import useChallengeContext from '@/context/challenge/context';
-import isBucketFilled from '@/utils/is-bucket-filled';
 import isBucketEmpty from '@/utils/is-bucket-empty';
+import isBucketFilled from '@/utils/is-bucket-filled';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function TransferButtons() {
     const { firstBucket, secondBucket, transferWater, isSolved } = useChallengeContext();

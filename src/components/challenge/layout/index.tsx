@@ -1,8 +1,8 @@
-import { Card } from '@/components/ui/card';
 import InstructionsDialog from '@/components/instructions-dialog';
-import ChallengeHeader from '../header';
-import ChallengeFooter from '../footer';
+import { Card } from '@/components/ui/card';
 import ChallengeBody from '../body';
+import ChallengeFooter from '../footer';
+import ChallengeHeader from '../header';
 
 export default function WaterBucketChallenge() {
     return (

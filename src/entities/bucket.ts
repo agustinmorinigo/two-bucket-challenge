@@ -1,7 +1,4 @@
-import type {
-    FIRST_BUCKET_MAX_CAPACITY,
-    SECOND_BUCKET_MAX_CAPACITY,
-} from '@/constants/bucket';
+import type { FIRST_BUCKET_MAX_CAPACITY, SECOND_BUCKET_MAX_CAPACITY } from '@/constants/bucket';
 
 export type BucketType = 'first' | 'second';
 

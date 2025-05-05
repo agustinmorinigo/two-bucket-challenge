@@ -1,6 +1,6 @@
+import ResetButton from '../reset-button';
 import CompletedIndicator from './completed-indicator';
 import MovesCount from './moves-count';
-import ResetButton from '../reset-button';
 
 export default function ChallengeFooter() {
     return (

@@ -1,6 +1,6 @@
-import { RotateCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import useChallengeContext from '@/context/challenge/context';
+import { RotateCcw } from 'lucide-react';
 
 interface ResetButtonProps {
     showLabel?: boolean;

@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { ChallengeContext } from './context';
 import type { Bucket, BucketType } from '@/entities/bucket';
 import hasTheRequiredQuantity from '@/utils/has-the-required-quantity';
+import { useEffect, useState } from 'react';
+import { ChallengeContext } from './context';
 
 const ChallengeProvider = ({ children }: { children: React.ReactNode }) => {
     const [bucketsInfo, setBucketsInfo] = useState<Record<BucketType, Bucket>>({

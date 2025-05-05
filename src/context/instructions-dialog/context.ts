@@ -7,16 +7,11 @@ export type InstructionsDialogContextType = {
     toggle: () => void;
 };
 
-export const InstructionsDialogContext = createContext<
-    InstructionsDialogContextType | undefined
->(undefined);
+export const InstructionsDialogContext = createContext<InstructionsDialogContextType | undefined>(undefined);
 
 const useInstructionsDialogContext = () => {
     const context = useContext(InstructionsDialogContext);
-    if (!context)
-        throw new Error(
-            'useInstructionsDialogContext must be used within InstructionsDialogProvider',
-        );
+    if (!context) throw new Error('useInstructionsDialogContext must be used within InstructionsDialogProvider');
     return context;
 };
 

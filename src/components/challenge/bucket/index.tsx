@@ -1,6 +1,6 @@
+import { SECOND_BUCKET_MAX_CAPACITY } from '@/constants/bucket';
 import type { Bucket as BucketT } from '@/entities/bucket';
 import BucketButtons from './bucket-buttons';
-import { SECOND_BUCKET_MAX_CAPACITY } from '@/constants/bucket';
 
 interface BucketProps {
     bucket: BucketT;

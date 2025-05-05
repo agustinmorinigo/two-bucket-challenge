@@ -1,6 +1,6 @@
-import { Award } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import useChallengeContext from '@/context/challenge/context';
+import { cn } from '@/lib/utils';
+import { Award } from 'lucide-react';
 
 export default function CompletedIndicator() {
     const { isSolved } = useChallengeContext();
