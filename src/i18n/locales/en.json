@@ -1,0 +1,23 @@
+{
+  "developedBy": "Developed by",
+  "transfer": "Transfer",
+  "reset": "Reset",
+  "movements": "Movements",
+  "empty": "Empty",
+  "fill": "Fill",
+  "bucket": "{{count}} liter bucket",
+  "challenge": {
+    "title": "Water Bucket Challenge",
+    "description": "You have two buckets, one with 3 liters and the other with 5 liters. The goal is to obtain exactly 4 liters of water in one of them. The water supply is infinite!",
+    "allowedActions": {
+      "description": "You can perform the following actions:",
+      "fill": "Completely fill any bucket.",
+      "empty": "Completely empty any bucket.",
+      "transfer": "Transfer water from one bucket to another."
+    },
+    "footerDescription": "Try to solve the challenge using the fewest number of moves possible!"
+  },
+  "instructions": "Instructions",
+  "completedChallenge": "Challenge completed!",
+  "understand": "Got it"
+}

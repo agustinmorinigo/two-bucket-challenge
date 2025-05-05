@@ -1,15 +1,17 @@
+import { Droplets } from 'lucide-react';
+import useLanguage from '@/hooks/use-language';
 import { Button } from '@/components/ui/button';
 import useChallengeContext from '@/context/challenge/context';
 import type { Bucket } from '@/entities/bucket';
 import isBucketEmpty from '@/utils/is-bucket-empty';
 import isBucketFilled from '@/utils/is-bucket-filled';
-import { Droplets } from 'lucide-react';
 
 interface BucketButtonsProps {
     bucket: Bucket;
 }
 
 export default function BucketButtons({ bucket }: BucketButtonsProps) {
+    const { t } = useLanguage();
     const { fillBucket, emptyBucket, isSolved } = useChallengeContext();
     const { type } = bucket;
 
@@ -21,7 +23,7 @@ export default function BucketButtons({ bucket }: BucketButtonsProps) {
                 disabled={isBucketFilled(bucket) || isSolved}
             >
                 <Droplets className="h-4 w-4" />
-                Llenar
+                {t('fill')}
             </Button>
             <Button
                 onClick={() => emptyBucket(type)}
@@ -29,7 +31,7 @@ export default function BucketButtons({ bucket }: BucketButtonsProps) {
                 className="border-sky-600 text-sky-600 md:w-full"
                 disabled={isBucketEmpty(bucket) || isSolved}
             >
-                Vaciar
+                {t('empty')}
             </Button>
         </div>
     );

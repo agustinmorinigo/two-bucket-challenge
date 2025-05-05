@@ -1,19 +1,24 @@
 import { SECOND_BUCKET_MAX_CAPACITY } from '@/constants/bucket';
 import type { Bucket as BucketT } from '@/entities/bucket';
 import BucketButtons from './bucket-buttons';
+import useLanguage from '@/hooks/use-language';
 
 interface BucketProps {
     bucket: BucketT;
 }
 
 export default function Bucket({ bucket }: BucketProps) {
+    const { t } = useLanguage();
+
     const { currentWaterQuantity, capacity } = bucket;
     const containerHeightPercent = Math.min((capacity / SECOND_BUCKET_MAX_CAPACITY) * 100, 100);
     const heightPercent = (currentWaterQuantity / capacity) * 100;
 
     return (
         <div className="flex flex-col items-center w-full md:w-fit md:h-full gap-4">
-            <h2 className="text-xl font-semibold text-sky-600 shrink-0 w-full text-center">Balde de {capacity}L</h2>
+            <h2 className="text-xl font-semibold text-sky-600 shrink-0 w-full text-center">
+                {t('bucket', { count: capacity })}
+            </h2>
 
             <div className="w-40 h-60 flex items-center justify-center overflow-hidden">
                 <div

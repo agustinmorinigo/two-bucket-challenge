@@ -1,8 +1,10 @@
+import { Award } from 'lucide-react';
+import useLanguage from '@/hooks/use-language';
 import useChallengeContext from '@/context/challenge/context';
 import { cn } from '@/lib/utils';
-import { Award } from 'lucide-react';
 
 export default function CompletedIndicator() {
+    const { t } = useLanguage();
     const { isSolved } = useChallengeContext();
 
     return (
@@ -13,7 +15,7 @@ export default function CompletedIndicator() {
             )}
         >
             <Award className="mr-2 h-5 w-5 text-green-600" />
-            <span className="font-bold">¡Desafío completado!</span>
+            <span className="font-bold">{t('completedChallenge')}</span>
         </div>
     );
 }

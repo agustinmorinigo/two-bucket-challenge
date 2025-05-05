@@ -15,6 +15,7 @@ export default defineConfig(({ command }) => ({
             '@/context': path.resolve(__dirname, './src/context'),
             '@/entities': path.resolve(__dirname, './src/entities'),
             '@/hooks': path.resolve(__dirname, './src/hooks'),
+            '@/i18n': path.resolve(__dirname, './src/i18n'),
             '@/lib': path.resolve(__dirname, './src/lib'),
             '@/utils': path.resolve(__dirname, './src/utils')
         },
