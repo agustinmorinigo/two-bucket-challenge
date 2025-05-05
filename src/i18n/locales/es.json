@@ -1,0 +1,23 @@
+{
+  "developedBy": "Desarrollado por",
+  "transfer": "Transferir",
+  "reset": "Reiniciar",
+  "movements": "Movimientos",
+  "empty": "Vaciar",
+  "fill": "Llenar",
+  "bucket": "Balde de {{count}} litros",
+  "challenge": {
+    "title": "Desafío de los baldes de agua",
+    "description": "Tienes dos baldes, uno de 3 litros y otro de 5 litros. El objetivo es obtener exactamente 4 litros de agua en alguno de ellos. ¡El agua es infinita!",
+    "allowedActions": {
+      "description": "Puedes realizar las siguientes acciones:",
+      "fill": "Llenar completamente cualquier balde.",
+      "empty": "Vaciar completamente cualquier balde.",
+      "transfer": "Transferir agua de un balde a otro."
+    },
+    "footerDescription": "¡Intenta resolver el desafío con la menor cantidad de movimientos posible!"
+  },
+  "instructions": "Instrucciones",
+  "completedChallenge": "¡Desafío completado!",
+  "understand": "Entendido"
+}

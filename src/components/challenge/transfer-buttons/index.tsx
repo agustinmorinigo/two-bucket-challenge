@@ -1,10 +1,12 @@
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import useLanguage from '@/hooks/use-language';
 import useChallengeContext from '@/context/challenge/context';
 import isBucketEmpty from '@/utils/is-bucket-empty';
 import isBucketFilled from '@/utils/is-bucket-filled';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function TransferButtons() {
+    const { t } = useLanguage();
     const { firstBucket, secondBucket, transferWater, isSolved } = useChallengeContext();
 
     return (
@@ -16,7 +18,7 @@ export default function TransferButtons() {
                 disabled={isBucketEmpty(firstBucket) || isBucketFilled(secondBucket) || isSolved}
             >
                 <ChevronRight className="rotate-90 md:rotate-0" />
-                <span>Transferir</span>
+                <span>{t('transfer')}</span>
             </Button>
             <Button
                 onClick={() => transferWater(secondBucket.type, firstBucket.type)}
@@ -25,7 +27,7 @@ export default function TransferButtons() {
                 disabled={isBucketEmpty(secondBucket) || isBucketFilled(firstBucket) || isSolved}
             >
                 <ChevronLeft className="rotate-90 md:rotate-0" />
-                <span>Transferir</span>
+                <span>{t('transfer')}</span>
             </Button>
         </div>
     );
