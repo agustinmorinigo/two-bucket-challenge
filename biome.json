@@ -8,18 +8,14 @@
     },
     "files": {
         "ignoreUnknown": false,
-        "ignore": [
-            "**/*.config.js",
-            "**/*.config.ts",
-            "**/*.json",
-            "**/*.yml",
-            "**/*.yaml"
-        ]
+        "ignore": ["**/*.config.js", "**/*.config.ts", "**/*.json", "**/*.yml", "**/*.yaml"]
     },
     "formatter": {
         "enabled": true,
         "indentStyle": "space",
-        "indentWidth": 4
+        "indentWidth": 4,
+        "lineWidth": 120,
+        "bracketSpacing": true
     },
     "organizeImports": {
         "enabled": true

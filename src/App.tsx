@@ -1,8 +1,8 @@
-import Header from '@/components/layout/Header';
-import Body from '@/components/layout/Body';
-import Footer from '@/components/layout/Footer';
+import Body from '@/components/layout/body';
+import Footer from '@/components/layout/footer';
+import Header from '@/components/layout/header';
 
-function App() {
+export default function App() {
     return (
         <div className="size-full grid grid-rows-[auto_1fr_auto] grid-cols-1">
             <Header />
@@ -11,5 +11,3 @@ function App() {
         </div>
     );
 }
-
-export default App;
