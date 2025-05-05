@@ -44,8 +44,8 @@ Follow these steps to install and set up the project:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/two-bucket.git
-   cd two-bucket
+   git clone https://github.com/agustinmorinigo/two-bucket-challenge.git
+   cd two-bucket-challenge
    ```
 
 2. Install the dependencies:
