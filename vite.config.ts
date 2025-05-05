@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config';
+import { defineConfig, configDefaults } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import tailwindcss from '@tailwindcss/vite';
@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => ({
     base: command === 'build' ? '/two-bucket-challenge/' : '/',
     resolve: {
         alias: {
-            '@/': path.resolve(__dirname, './src/'),
+            '@': path.resolve(__dirname, 'src'),
             '@/components': path.resolve(__dirname, './src/components'),
             '@/constants': path.resolve(__dirname, './src/constants'),
             '@/context': path.resolve(__dirname, './src/context'),
@@ -23,5 +23,6 @@ export default defineConfig(({ command }) => ({
         globals: true,
         environment: 'jsdom',
         setupFiles: './src/setupTests.ts',
+        exclude: [...configDefaults.exclude],
     },
 }));
